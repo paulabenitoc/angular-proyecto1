@@ -1,0 +1,56 @@
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    width: 300px;
+    /* Ancho de la tarjeta */
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    max-width: 100%;
+    /* Limita el ancho de la imagen al 100% del contenedor */
+    height: auto;
+    /* Ajusta automáticamente la altura según el ancho */
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.product-card h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.product-card h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.product-card p {
+    margin-bottom: 12px;
+}
+
+.product-actions {
+    display: flex;
+    align-items: center;
+}
+
+.product-actions section {
+    flex: 1;
+    font-size: 16px;
+}
+
+.product-actions button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-actions button:hover {
+    background-color: #0056b3;
+}
