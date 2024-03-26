@@ -1,12 +1,42 @@
-<header>
-    <div class="logo">
-        <img src="ruta/a/la/imagen/logo.png" alt="Logo">
-    </div>
-    <nav>
-        <ul>
-            <li><a routerLink="/">Inicio</a></li>
-            <li><a routerLink="/products">Productos</a></li>
-            <li><a routerLink="/management">Gestión</a></li>
-        </ul>
-    </nav>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de tu página</title>
+    <link rel="stylesheet" href="header.component.scss">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="../../../assets/images/header.png" alt="" class="logo">
+        <div class="container">
+            <nav>
+                <ul class="nav">
+                    <section class="index-card">
+                        <img src="../../../assets/images/energia-nuclear.png" alt="" class="icon">
+                        <li><a routerLink="">Home</a></li>
+                    </section>
+                    
+                    <section class="index-card">
+                        <img src="../../../assets/images/prismaticos.png" alt="" class="icon">
+                        <li><a routerLink="products">Prods.</a></li>
+                    </section>
+                    
+                    <section class="index-card">
+                        <img src="../../../assets/images/timon.png" alt="" class="icon">
+                        <li><a routerLink="management">Gestión</a></li>
+                    </section>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+</body>
+
+</html>
+
+

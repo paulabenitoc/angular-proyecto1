@@ -10,6 +10,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ManagementComponent } from './management/management.component';
 import { ProductsComponent } from './products/products.component';
 import { ItemComponent } from './products/item/item.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ItemComponent } from './products/item/item.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
