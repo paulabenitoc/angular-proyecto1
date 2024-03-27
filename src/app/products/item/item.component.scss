@@ -1,18 +1,13 @@
 .product-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
     padding: 16px;
     background-color: #fff;
     width: 300px;
-    /* Ancho de la tarjeta */
     margin-bottom: 20px;
 }
 
 .product-card img {
     max-width: 100%;
-    /* Limita el ancho de la imagen al 100% del contenedor */
     height: auto;
-    /* Ajusta automáticamente la altura según el ancho */
     border-radius: 4px;
     margin-bottom: 12px;
 }

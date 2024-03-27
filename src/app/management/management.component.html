@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h3>Creación/edición de productos</h3>
-    <form [formGroup]="formulario" (ngSubmit)="onSubmit">
+<section class="container">
+<h3>Creación/edición de productos</h3>
+
+<div class="form">
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
         <div class="mb-3">
             <label class="form-label">Nombre del producto:</label>
             <input type="text" class="form-control" formControlName="name">
@@ -22,14 +17,14 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Ruta de la imagen:</label>
-            <input type="text" class="form-control" formControlName="imageUrl">
+            <input type="text" class="form-control" formControlName="image">
         </div>
         <div class="mb-3">
             <label class="form-label">Opiniones:</label>
-            <input type="text" class="form-control" formControlName="opinions">
+            <input type="text" class="form-control" formControlName="stars">
         </div>
-        <input type="submit" value="Guardar" class="btn btn-outline-info">
+        <input type="submit" value="Guardar" class="btn btn-primary">
     </form>
-
-</body>
-</html>
+    <app-item [item]="this.formulario.value" class="appItem"></app-item>
+</div>
+</section>

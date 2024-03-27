@@ -11,6 +11,7 @@ import { ManagementComponent } from './management/management.component';
 import { ProductsComponent } from './products/products.component';
 import { ItemComponent } from './products/item/item.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProductsService } from './services/products.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(private ProductsService: ProductsService) {}
+}
